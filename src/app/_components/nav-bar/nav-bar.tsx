@@ -1,10 +1,15 @@
 "use client";
 
+import { setTheme } from "@/app/_store/home-store";
 import React from "react";
+import { useDispatch } from "react-redux";
 
 const NavBar = () => {
+  const dispatch = useDispatch();
+
   const toggleTheme = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const theme = event.target.checked ? "dark" : "retro";
+    const theme = event.target.checked ? "retro" : "night";
+    dispatch(setTheme(theme));
     document.querySelector("html")?.setAttribute("data-theme", theme);
   };
 
@@ -51,10 +56,9 @@ const NavBar = () => {
         <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
           <input type="checkbox" onChange={toggleTheme} />
-
           {/* sun icon */}
           <svg
-            className="swap-on h-6 w-6 fill-current"
+            className="swap-off h-6 w-6 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -63,7 +67,7 @@ const NavBar = () => {
 
           {/* moon icon */}
           <svg
-            className="swap-off h-6 w-6 fill-current"
+            className="swap-on h-6 w-6 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >

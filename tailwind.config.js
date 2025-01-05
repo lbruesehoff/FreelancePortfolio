@@ -12,7 +12,7 @@ module.exports = {
     extend: {},
   },
   daisyui: {
-    themes: ["light", "dark", "retro"],
+    themes: ["light", "night", "retro"],
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("daisyui")],
