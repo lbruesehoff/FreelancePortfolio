@@ -5,6 +5,7 @@ import store from "./_store/store-config";
 import Hero from "./_components/hero/hero";
 import Footer from "./_components/footer/footer";
 import Feature from "./_components/feature/feature";
+import Services from "./_components/services/services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <NavBar />
         <Hero />
         <Feature />
+        <Services />
         <Footer />
       </Provider>
     </div>
