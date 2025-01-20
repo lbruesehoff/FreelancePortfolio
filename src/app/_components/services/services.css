@@ -21,3 +21,22 @@
 .services-content {
   padding: 0 0 1rem 0;
 }
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  .services-container {
+    padding: 2rem 5rem;
+  }
+
+  .services-content {
+    font-size: 1.5rem;
+  }
+
+  .services-arrow {
+    padding: 0rem 8rem 2rem 0;
+  }
+
+  .services-arrow > div > div > svg {
+    height: 8vh !important;
+  }
+}

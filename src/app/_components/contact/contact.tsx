@@ -40,9 +40,9 @@ const Contact = () => {
                   className="textarea textarea-bordered window-textarea"
                   placeholder="Message"
                 ></textarea>
-              </div>
-              <div className="form-button-container">
-                <button className="btn btn-primary form-button">Send</button>
+                <div className="form-button-container">
+                  <button className="btn btn-primary form-button">Send</button>
+                </div>
               </div>
             </div>
           </div>
